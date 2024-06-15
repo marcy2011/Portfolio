@@ -133,6 +133,69 @@ footer a:hover {
   }
 }
 </style>
+<div id="custom-menu">
+  <ul>
+    <li><a href="https://renaarcade.altervista.org"><img src="https://gamecloudservices.altervista.org/logo.jpg" alt="Image 1" border-radius="10" width="20"><span>Rena Arcades</span></a></li>
+    <li><a href="https://renastore.altervista.org"><img src="https://renastore.altervista.org/logostore.png" alt="Image 2" width="18"><span>Rena Store</span></a></li>
+    <li><a href="https://renadeveloper.altervista.org"><img src="https://renadeveloper.altervista.org/logo.png" alt="Image 3" width="20"><span>Rena Developer</span></a></li>
+  </ul>
+</div>
+  
+<style>
+#custom-menu {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+
+#custom-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#custom-menu ul li {
+  margin-bottom: 10px;
+}
+
+#custom-menu ul li a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+#custom-menu ul li a img {
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+#custom-menu ul li a span {
+  font-size: 16px;
+}
+</style>
+
+<script>
+document.addEventListener('contextmenu', function(event) {
+  event.preventDefault();
+  if (window.innerWidth > 768) { // Mostra il menu solo se la larghezza della finestra è maggiore di 768px (considerato desktop)
+    var customMenu = document.getElementById('custom-menu');
+    customMenu.style.display = 'block';
+    customMenu.style.left = event.pageX + 'px';
+    customMenu.style.top = event.pageY + 'px';
+  }
+});
+
+document.addEventListener('click', function(event) {
+  var customMenu = document.getElementById('custom-menu');
+  customMenu.style.display = 'none';
+});
+
+</script>
     </header>
 <div style="text-align: center; margin-top: 100px;">
     <div style="margin-top: 10px;">
@@ -279,6 +342,32 @@ footer a:hover {
 }
 
 </style>
+    <a href="https://github.com/marcy2011/Portfolio">
+    <button class="btn">Vedi il codice di questo sito</button>
+</a>
+<style>
+    .btn {
+        padding: 10px 20px;
+        background-color: #ffffff;
+        color: black;
+        border: none;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 10px auto;
+        display: block;
+        text-decoration-line: underline;
+        text-decoration-color: white;
+    }
+    .btn:hover {
+        transform: scale(0.9);
+        background-color: black;
+        color: white;
+        text-decoration-line: underline;
+        text-decoration-color: black;
+    }
+</style>
         <h1>I miei social</h1> 
     </div>
 <style>
@@ -350,28 +439,4 @@ footer a:hover {
   <div class="image-container">
     <img src="redlogo.png" alt="Reddit Logo">
   </div>
-  
-  <a href="https://github.com/marcy2011/Portfolio">
-    <button class="btn">Vedi il codice di questo sito</button>
-</a>
-<style>
-    .btn {
-        padding: 10px 20px;
-        background-color: #ffffff;
-        color: black;
-        border: none;
-        border-radius: 10px;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        font-size: 16px;
-        margin: 10px auto;
-        display: block;
-        text-decoration: none; /* Aggiungi questa regola */
-    }
-    .btn:hover {
-        transform: scale(0.9);
-        background-color: black;
-        color: white;
-    }
-</style>
-<div style="width: 50%; height: 30px;"></div>
+<div style="width: 50%; height: 50px;"></div>
