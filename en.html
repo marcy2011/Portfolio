@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Marcymir's portfolio</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Marcymir's portfolio">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="marcymir.altervista.org">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body> 
+<header>
+<a href="https://marcymir.altervista.org">
+    <img id="lingua" src="bandieraen.png" alt="Lingua">
+</a>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        font-family: 'Open Sauce', sans-serif;
+    }
+    
+    #lingua {
+        cursor: pointer;
+        width: 30px;
+        position: absolute;
+        top: 20px;
+        right: 57px;
+        transform: translateX(50%);
+        border-radius: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+        #lingua {
+            margin-top: 30px;
+            right: 50%;
+        }
+    }
+</style>
+<style>
+    ::selection {
+        background-color: white;
+        color: black;
+    }
+</style>
+<footer>
+    Website developed by <a href="https://t.me/marcymir" target="_blank">@marcymir</a>
+</footer>
+<style>
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Ensure the footer starts from the left side */
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    backdrop-filter: blur(20px); /* Increased blur effect */
+    z-index: 9999; /* High z-index to stay above all elements */
+    text-align: center;
+    padding: 10px 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #ffffff; /* White text for contrast */
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    footer {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+}
+</style>
+<div id="background">
+<img src="background.png" alt="Sfondo">
+</div>
+<style>
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#background img {
+  width: 100%;
+  height: auto;
+  filter: blur(10px);
+}
+</style>
+<div id="backgroundmob">
+  <img src="backgroundRenamob.png" alt="Sfondo">
+</div>
+
+<style>
+#backgroundmob {
+  display: none;
+}
+  
+@media screen and (max-width: 767px) {  
+  #backgroundmob {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  #backgroundmob img {
+    width: 100%;
+    height: auto;
+    filter: blur(5px);
+  }
+}
+</style>
+<div id="custom-menu">
+  <ul>
+    <li><a href="https://renaarcade.altervista.org"><img src="https://gamecloudservices.altervista.org/logo.jpg" alt="Image 1" border-radius="10" width="20"><span>Rena Arcades</span></a></li>
+    <li><a href="https://renastore.altervista.org"><img src="https://renastore.altervista.org/logostore.png" alt="Image 2" width="18"><span>Rena Store</span></a></li>
+    <li><a href="https://renadeveloper.altervista.org"><img src="https://renadeveloper.altervista.org/logo.png" alt="Image 3" width="20"><span>Rena Developer</span></a></li>
+  </ul>
+</div>
+  
+<style>
+#custom-menu {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  padding: 10px;
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+
+#custom-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#custom-menu ul li {
+  margin-bottom: 10px;
+}
+
+#custom-menu ul li a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+#custom-menu ul li a img {
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+#custom-menu ul li a span {
+  font-size: 16px;
+}
+</style>
+
+<script>
+document.addEventListener('contextmenu', function(event) {
+  event.preventDefault();
+  if (window.innerWidth > 768) { // Mostra il menu solo se la larghezza della finestra è maggiore di 768px (considerato desktop)
+    var customMenu = document.getElementById('custom-menu');
+    customMenu.style.display = 'block';
+    customMenu.style.left = event.pageX + 'px';
+    customMenu.style.top = event.pageY + 'px';
+  }
+});
+
+document.addEventListener('click', function(event) {
+  var customMenu = document.getElementById('custom-menu');
+  customMenu.style.display = 'none';
+});
+
+</script>
+    </header>
+<div style="text-align: center; margin-top: 100px;">
+    <div style="margin-top: 10px;">
+        <h1>Who am I?</h1>
+        <p>
+Hello! My name is Marcello Miranda and I'm 12 years old. I am the owner of Rena, an organization that includes several websites and web apps that I have developed entirely by myself, with lots of advice from my team. I'm proud to present to you my projects: Rena Store, Rena Arcades, and Rena Developer, which we'll discuss in more detail later.</p>
+        <h1>The story of Rena</h1>
+        <p>Rena was born in 2020, when I was just 8 years old. Initially, I focused on creating concept videos, experimenting with creative ideas, and learning the basics of digital production. A few years later, in 2022, I started building websites using no-code tools, which allowed me to turn my ideas into reality without needing to write code. Then, in 2023, by learning HTML, CSS, and JavaScript, I redesigned all the no-code websites into HTML and hosted them on Altervista.</p>
+
+<div style="width: 50%; height: 20px;"></div>
+<div class="container">
+  <div class="img-container">
+    <img src="https://renastore.altervista.org/logostore.png" alt="Placeholder">
+  </div>
+  <div class="content-container">
+    <h2>Rena Store</h2>
+    <p>APK app store</p>
+<button class="button" onclick="window.location.href='https://renastore.altervista.org'">See website</button>
+<button class="button" onclick="window.location.href='https://github.com/marcy2011/Rena-Store'">See code</button>
+<button class="button" onclick="window.location.href='https://renastore.altervista.org/download.html'">Download</button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="img-container">
+    <img src="https://gamecloudservices.altervista.org/logo.jpg" alt="Placeholder">
+  </div>
+  <div class="content-container">
+    <h2>Rena Arcades</h2>
+    <p>Play online on browser</p>
+<button class="button" onclick="window.location.href='https://renaarcade.altervista.org'">See website</button>
+<button class="button" onclick="window.location.href='https://github.com/marcy2011/Rena-Arcade'">See code</button>
+<a href="https://renastore.altervista.org/rena-arcades.html" target="_blank">
+  <img src="https://renaarcade.altervista.org/downrenas.png" alt="Download On The Rena Store" style="width: 170px; height: auto; pointer-events: none;">
+</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="img-container">
+    <img src="https://renadeveloper.altervista.org/logo.png" alt="Placeholder">
+  </div>
+  <div class="content-container">
+    <h2>Rena Developer</h2>
+    <p>Program, use pre-made templates, and add app to the Rena Store</p>
+<button class="button" onclick="window.location.href='https://renadeveloper.altervista.org'">See website</button>
+<button class="button" onclick="window.location.href='https://github.com/marcy2011/Rena-Developer'">See code</button>
+  </div>
+</div>
+    <style>
+  .container {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 50px auto;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+  }
+  .img-container {
+    flex: 1;
+    text-align: center;
+    border-radius: 40px;
+  }
+  .img-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+    margin-top: 4px;
+    margin-left: 10px;
+  }
+  .content-container {
+    flex: 2;
+    padding: 20px;
+  }
+  .content-container h2 {
+    margin-top: 0;
+  }
+  .content-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  
+          .button {
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: black;
+            border: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+        }
+          .button:hover {
+    transform: scale(0.9);
+    background-color: black;
+    color: white;
+  }
+  
+    .content-container h2 {
+    margin-top: 0;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 767px) {
+  .container {
+  width: 350px;
+  }
+  
+  .img-container img {
+  width: 550px;
+  }
+  
+    .content-container {
+    font-size: 12px;
+    padding: 13px;
+  }
+  
+            .button:hover {
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: black;
+            border: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 16px;
+  }
+  
+    .content-container button {
+        padding: 8px 14px;
+    }
+}
+
+</style>
+    <a href="https://github.com/marcy2011/Portfolio">
+    <button class="btn">See code of this website</button>
+</a>
+<style>
+    .btn {
+        padding: 10px 20px;
+        background-color: #ffffff;
+        color: black;
+        border: none;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 10px auto;
+        display: block;
+        text-decoration-line: underline;
+        text-decoration-color: white;
+    }
+    .btn:hover {
+        transform: scale(0.9);
+        background-color: black;
+        color: white;
+        text-decoration-line: underline;
+        text-decoration-color: black;
+    }
+</style>
+        <h1>My social media profiles</h1> 
+<style>
+.image-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 30px;
+  transition: transform 0.3s, margin 0.3s;
+  width: 150px;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+  @media only screen and (max-width: 768px) {
+    .image-container {
+      margin-left: 10px;
+      width: 100px;
+      border-radius: 20px;
+      margin-top: 10px;
+      transition: none;
+    }
+
+    .image-container:nth-child(2n) {
+      clear: both;
+    }
+</style>
+<a href="https://www.instagram.com/marcy.mir?igsh=MWFhNDIycXo0YnAzZA==" target="_blank" rel="noopener noreferrer">
+  <div class="image-container">
+    <img src="iglogo.png" alt="Instagram Logo">
+  </div>
+<a href="https://github.com/marcy2011" target="_blank" rel="noopener noreferrer">
+  <div class="image-container">
+    <img src="gitlogo.png" alt="Git Hub Logo">
+  </div>
+<a href="https://pin.it/64DESVvzC" target="_blank" rel="noopener noreferrer">
+  <div class="image-container">
+    <img src="pinlogo.png" alt="Pinterest Logo">
+  </div>
+<a href="https://t.me/marcymir" target="_blank" rel="noopener noreferrer">
+  <div class="image-container">
+    <img src="tglogo.png" alt="Telegram Logo">
+  </div>
+<a href="https://www.snapchat.com/add/marcymiranda11?share_id=U5XLJsVDPo4&locale=it-IT" target="_blank" rel="noopener noreferrer">
+  <div class="image-container">
+    <img src="snlogo.png" alt="Snapchat Logo">
+  </div>
+<a href="https://www.threads.net/@marcy.mir" target="_blank" rel="noopener noreferrer">
+  <div class="image-container">
+    <img src="thrlogo.png" alt="Threads Logo">
+  </div>
+<a href="https://www.tiktok.com/@marcellomiranda05?_t=8nDYysxPyjZ&_r=1" target="_blank" rel="noopener noreferrer">
+  <div class="image-container">
+    <img src="tiklogo.png" alt="Tik Tok Logo">
+  </div>
+<a href="https://www.facebook.com/share/qEMqB34M2GDTZRmT/" target="_blank" rel="noopener noreferrer">
+  <div class="image-container">
+    <img src="facelogo.png" alt="Facebook Logo">
+  </div>
+<a href="https://mastodon.social/@Marcymir" target="_blank" rel="noopener noreferrer">
+  <div class="image-container">
+    <img src="malogo.png" alt="Mastodon Logo">
+  </div>
+<a href="https://www.reddit.com/u/marcellomiranda05/s/VSRavDMrMS" target="_blank" rel="noopener noreferrer">
+  <div class="image-container">
+    <img src="redlogo.png" alt="Reddit Logo">
+  </div>
+<div style="width: 50%; height: 50px;"></div>
