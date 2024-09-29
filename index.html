@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
     <title>Portfolio di marcymir</title>
@@ -97,6 +97,9 @@ footer a:hover {
 <div id="background">
 <img src="background.png" alt="Sfondo">
 </div>
+<div id="backgroundmob">
+  <img src="backgroundRenamob.png" alt="Sfondo">
+</div>
 <style>
 #background {
   position: fixed;
@@ -114,10 +117,6 @@ footer a:hover {
   filter: blur(10px);
 }
 </style>
-<div id="backgroundmob">
-  <img src="backgroundRenamob.png" alt="Sfondo">
-</div>
-
 <style>
 #backgroundmob {
   display: none;
@@ -145,7 +144,7 @@ footer a:hover {
 <div id="custom-menu">
   <ul>
     <li><a href="https://renaarcade.altervista.org"><img src="https://gamecloudservices.altervista.org/logo.jpg" alt="Image 1" border-radius="10" width="20"><span>Rena Arcades</span></a></li>
-    <li><a href="https://renastore.altervista.org"><img src="https://renastore.altervista.org/logostore.png" alt="Image 2" width="18"><span>Rena Store</span></a></li>
+    <li><a href="https://renastore.altervista.org"><img src="https://renastore.altervista.org/logo.png" alt="Image 2" width="18"><span>Rena Store</span></a></li>
     <li><a href="https://renadeveloper.altervista.org"><img src="https://renadeveloper.altervista.org/logo.png" alt="Image 3" width="20"><span>Rena Developer</span></a></li>
     <li><a href="https://renasupporto.altervista.org"><img src="https://renasupporto.altervista.org/icon.jpg" alt="Image 3" width="20"><span>Rena Supporto</span></a></li>
   </ul>
@@ -218,7 +217,7 @@ document.addEventListener('click', function(event) {
 
 <div class="container">
   <div class="img-container">
-    <img src="https://renastore.altervista.org/logostore.png" alt="Placeholder">
+    <img src="https://renastore.altervista.org/logo.png" alt="Placeholder">
   </div>
   <div class="content-container">
     <h2>Rena Store</h2>
@@ -239,7 +238,7 @@ document.addEventListener('click', function(event) {
 <button class="button" onclick="window.location.href='https://marcymir.altervista.org/rena-arcades.html'">Scopri di più</button>
 <button class="button" onclick="window.location.href='https://github.com/marcy2011/Rena-Arcade'">Vedi codice</button>
 <a href="https://renastore.altervista.org/rena-arcades.html" target="_blank">
-  <img src="https://renaarcade.altervista.org/downrenas.png" alt="Download On The Rena Store" style="width: 170px; height: auto; pointer-events: none;">
+  <img src="https://renadeveloper.altervista.org/downloadrs.png" alt="Download On The Rena Store" style="width: 170px; height: auto; pointer-events: none;">
 </a>
   </div>
 </div>
@@ -263,8 +262,48 @@ document.addEventListener('click', function(event) {
   <div class="content-container">
     <h2>Rena Supporto</h2>
     <p>Contatta il servizio clienti di Rena</p>
-<button class="button" onclick="window.location.href='https://marcymir.altervista.org/rena-supporto'">Scopri di più</button>
+<button class="button" onclick="window.location.href='https://marcymir.altervista.org/rena-supporto.html'">Scopri di più</button>
 <button class="button" onclick="window.location.href='https://github.com/marcy2011/Rena-Supporto'">Vedi codice</button>
+  </div>
+</div>
+<h1>Altri progetti</h1>
+<div class="container">
+  <div class="img-container">
+    <img src="https://renastore.altervista.org/logo_calcolatrice.png" alt="Placeholder">
+  </div>
+  <div class="content-container">
+    <h2>Calcolatrice</h2>
+    <p>Una calcolatrice WebApp</p>
+<button class="button" onclick="window.location.href='https://renadeveloper.altervista.org/calcolatrice-modello.html'">Scopri di più</button>
+<button class="button" onclick="window.location.href='https://github.com/marcy2011/calculator'">Vedi codice</button>
+<a href="https://renastore.altervista.org/calculator.html" target="_blank">
+  <img src="https://renadeveloper.altervista.org/downloadrs.png" alt="Download On The Rena Store" style="width: 170px; height: auto; pointer-events: none;">
+</a>
+  </div>
+</div>
+<div class="container">
+  <div class="img-container">
+    <img src="https://renastore.altervista.org/qrcodemaker.png" alt="Placeholder">
+  </div>
+  <div class="content-container">
+    <h2>QRCode Maker</h2>
+    <p>Crea QR Code con collegamenti a testo, link e immagini con la WebApp QRCode Maker </p>
+<button class="button" onclick="window.location.href='https://renadeveloper.altervista.org/qrcode-maker-modello.html'">Scopri di più</button>
+<button class="button" onclick="window.location.href='https://github.com/marcy2011/QRCode-Maker'">Vedi codice</button>
+<a href="https://renastore.altervista.org/qrcode-maker.html" target="_blank">
+  <img src="https://renadeveloper.altervista.org/downloadrs.png" alt="Download On The Rena Store" style="width: 170px; height: auto; pointer-events: none;">
+</a>
+  </div>
+</div>
+<h1>Per i miei clienti:</h1>
+<div class="container">
+  <div class="img-container">
+    <img src="https://astolfo.altervista.org/pic.gif" alt="Placeholder">
+  </div>
+  <div class="content-container">
+    <h2>Astolfo</h2>
+    <p>Link social Astolfo</p>
+<button class="button" onclick="window.location.href='https://astolfo.altervista.org'">Scopri di più</button>
   </div>
 </div>
     <style>
@@ -395,74 +434,158 @@ document.addEventListener('click', function(event) {
     }
 </style>
         <h1>I miei social</h1> 
-    </div>
 <style>
-.image-container {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  border-radius: 30px;
-  transition: transform 0.3s, margin 0.3s;
-  width: 150px;
-}
-
-.image-container img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-  @media only screen and (max-width: 768px) {
-    .image-container {
-      margin-left: 10px;
-      width: 100px;
-      border-radius: 20px;
-      margin-top: 10px;
-      transition: none;
-    }
-
-    .image-container:nth-child(2n) {
-      clear: both;
-    }
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .app-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .app-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .app-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 30px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    object-fit: cover;
+  }
+  .app-name {
+    font-size: 0.9rem;
+    color: white;
+    margin: 0;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
+  }
 </style>
-<a href="https://www.instagram.com/marcy.mir?igsh=MWFhNDIycXo0YnAzZA==" target="_blank" rel="noopener noreferrer">
-  <div class="image-container">
-    <img src="iglogo.png" alt="Instagram Logo">
-  </div>
-<a href="https://github.com/marcy2011" target="_blank" rel="noopener noreferrer">
-  <div class="image-container">
-    <img src="gitlogo.png" alt="Git Hub Logo">
-  </div>
-<a href="https://pin.it/64DESVvzC" target="_blank" rel="noopener noreferrer">
-  <div class="image-container">
-    <img src="pinlogo.png" alt="Pinterest Logo">
-  </div>
-<a href="https://t.me/marcymir" target="_blank" rel="noopener noreferrer">
-  <div class="image-container">
-    <img src="tglogo.png" alt="Telegram Logo">
-  </div>
-<a href="https://www.snapchat.com/add/marcymiranda11?share_id=U5XLJsVDPo4&locale=it-IT" target="_blank" rel="noopener noreferrer">
-  <div class="image-container">
-    <img src="snlogo.png" alt="Snapchat Logo">
-  </div>
-<a href="https://www.threads.net/@marcy.mir" target="_blank" rel="noopener noreferrer">
-  <div class="image-container">
-    <img src="thrlogo.png" alt="Threads Logo">
-  </div>
-<a href="https://www.tiktok.com/@marcellomiranda05?_t=8nDYysxPyjZ&_r=1" target="_blank" rel="noopener noreferrer">
-  <div class="image-container">
-    <img src="tiklogo.png" alt="Tik Tok Logo">
-  </div>
-<a href="https://www.facebook.com/share/qEMqB34M2GDTZRmT/" target="_blank" rel="noopener noreferrer">
-  <div class="image-container">
-    <img src="facelogo.png" alt="Facebook Logo">
-  </div>
-<a href="https://mastodon.social/@Marcymir" target="_blank" rel="noopener noreferrer">
-  <div class="image-container">
-    <img src="malogo.png" alt="Mastodon Logo">
-  </div>
-<a href="https://www.reddit.com/u/marcellomiranda05/s/VSRavDMrMS" target="_blank" rel="noopener noreferrer">
-  <div class="image-container">
-    <img src="redlogo.png" alt="Reddit Logo">
-  </div>
+  <main>
+    <div class="app-grid">
+      <div class="app-card">
+        <a href="https://www.instagram.com/marcy.mir" target="_blank" style="text-decoration: none;">
+          <img src="https://marcymir.altervista.org/iglogo.png" alt="Instagram Logo" class="app-icon">
+          <p class="app-name">Instagram</p>
+        </a>
+      </div>
+      <div class="app-card">
+        <a href="https://github.com/marcy2011" target="_blank" style="text-decoration: none;">
+          <img src="https://marcymir.altervista.org/gitlogo.png" alt="Git Hub Logo" class="app-icon">
+          <p class="app-name">Git Hub</p>
+        </a>
+      </div>
+      <div class="app-card">
+        <a href="https://pin.it/64DESVvzC" target="_blank" style="text-decoration: none;">
+          <img src="https://marcymir.altervista.org/pinlogo.png" alt="Pinterest Logo" class="app-icon">
+          <p class="app-name">Pinterest</p>
+        </a>
+      </div>
+      <div class="app-card">
+        <a href="https://t.me/marcymir" target="_blank" style="text-decoration: none;">
+          <img src="https://marcymir.altervista.org/tglogo.png" alt="Telegram Logo" class="app-icon">
+          <p class="app-name">Telegram</p>
+        </a>
+      </div>
+      <div class="app-card">
+        <a href="https://www.snapchat.com/add/marcymiranda11?share_id=U5XLJsVDPo4&locale=it-IT" target="_blank" style="text-decoration: none;">
+          <img src="https://marcymir.altervista.org/snlogo.png" alt="Snapchat Logo" class="app-icon">
+          <p class="app-name">Snapchat</p>
+        </a>
+      </div>
+      <div class="app-card">
+        <a href="https://www.threads.net/@marcy.mir" target="_blank" style="text-decoration: none;">
+          <img src="https://marcymir.altervista.org/thrlogo.png" alt="Threads Logo" class="app-icon">
+          <p class="app-name">Threads</p>
+        </a>
+      </div>
+      <div class="app-card">
+        <a href="https://www.tiktok.com/@marcymir/" target="_blank" style="text-decoration: none;">
+          <img src="https://marcymir.altervista.org/tiklogo.png" alt="TikTok Logo" class="app-icon">
+          <p class="app-name">TitTok</p>
+        </a>
+      </div>
+<div class="app-card">
+  <a href="https://www.facebook.com/share/qEMqB34M2GDTZRmT/" target="_blank" style="text-decoration: none;">
+    <img src="https://marcymir.altervista.org/facelogo.png" alt="Facebook Logo" class="app-icon">
+    <p class="app-name">Facebook</p>
+  </a>
+</div>
+<div class="app-card">
+  <a href="https://mastodon.social/@Marcymir" target="_blank" style="text-decoration: none;">
+    <img src="https://marcymir.altervista.org/malogo.png" alt="Mastodon Logo" class="app-icon">
+    <p class="app-name">Mastodon</p>
+  </a>
+</div>
+      <div class="app-card">
+        <a href="https://www.reddit.com/u/marcellomiranda05/s/VSRavDMrMS" style="text-decoration: none;">
+          <img src="https://marcymir.altervista.org/redlogo.png" alt="Reddit Logo" class="app-icon">
+          <p class="app-name">Reddit</p>
+        </a>
+      </div>
+      <div class="app-card">
+        <a href="https://www.reddit.com/u/marcellomiranda05/s/VSRavDMrMS" style="text-decoration: none;">
+          <img src="https://marcymir.altervista.org/x.avif" alt="X Logo" class="app-icon">
+          <p class="app-name">X</p>
+        </a>
+      </div>
+    </div>
+  </main>
+<h1>Profili social di Rena</h1>
+  <main>
+    <div class="app-grid">
+      <div class="app-card">
+        <a href="https://www.instagram.com/renaofficialtech/" target="_blank" style="text-decoration: none;">
+          <img src="https://marcymir.altervista.org/iglogo.png" alt="Instagram Logo" class="app-icon">
+          <p class="app-name">Instagram</p>
+        </a>
+      </div>
+      <div class="app-card">
+        <a href="https://github.com/marcy2011" target="_blank" style="text-decoration: none;">
+          <img src="https://marcymir.altervista.org/gitlogo.png" alt="Git Hub Logo" class="app-icon">
+          <p class="app-name">Git Hub</p>
+        </a>
+      </div>
+      <div class="app-card">
+        <a href="https://t.me/renatechnologyofficial" target="_blank" style="text-decoration: none;">
+          <img src="https://marcymir.altervista.org/tglogo.png" alt="Telegram Logo" class="app-icon">
+          <p class="app-name">Telegram</p>
+        </a>
+      </div>
+      <div class="app-card">
+        <a href="https://www.threads.net/@renaofficialtech" target="_blank" style="text-decoration: none;">
+          <img src="https://marcymir.altervista.org/thrlogo.png" alt="Threads Logo" class="app-icon">
+          <p class="app-name">Threads</p>
+        </a>
+      </div>
+      <div class="app-card">
+        <a href="https://www.tiktok.com/@renatechnology" target="_blank" style="text-decoration: none;">
+          <img src="https://marcymir.altervista.org/tiklogo.png" alt="TikTok Logo" class="app-icon">
+          <p class="app-name">TitTok</p>
+        </a>
+      </div>
+<div class="app-card">
+  <a href="https://www.facebook.com/profile.php?id=61556113467070" target="_blank" style="text-decoration: none;">
+    <img src="https://marcymir.altervista.org/facelogo.png" alt="Facebook Logo" class="app-icon">
+    <p class="app-name">Facebook</p>
+  </a>
+</div>
+<div class="app-card">
+  <a href="https://mastodon.social/@Renaofficial" target="_blank" style="text-decoration: none;">
+    <img src="https://marcymir.altervista.org/malogo.png" alt="Mastodon Logo" class="app-icon">
+    <p class="app-name">Mastodon</p>
+  </a>
+</div>
+</div>
+  </main>
 <div style="width: 50%; height: 50px;"></div>
