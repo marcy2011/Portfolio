@@ -1,591 +1,1056 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <title>Portfolio di marcymir</title>
-    <link rel="icon" type="image/x-icon" href="logo.png">    
+    <link rel="icon" type="image/x-icon" href="logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta property="og:title" content="Portfolio di marcymir">
     <meta property="og:image" content="logo.png">
     <meta property="og:url" content="marcymir.altervista.org">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body> 
-<header>
-<a href="en.html">
-    <img id="lingua" src="bandierait.png" alt="Lingua">
-</a>
-<style>
-    body {
-        background-color: black;
-        color: white;
-        font-family: 'Open Sauce', sans-serif;
-        cursor: url('cursore.png'), auto;
-    }
-    
-    a, button {
-    cursor: url('cursore.png'), pointer;
-    }
-    
-    button {
-    cursor: url('cursore.png'), pointer;
-    }
-    
-    #lingua {
-        cursor: pointer;
-        width: 30px;
-        position: absolute;
-        top: 20px;
-        right: 57px;
-        transform: translateX(50%);
-        border-radius: 20px;
-    }
 
-    @media screen and (max-width: 600px) {
-        #lingua {
-            margin-top: 30px;
-            right: 50%;
-        }
-    }
-</style>
-<style>
-    ::selection {
-        background-color: white;
-        color: black;
-    }
-</style>
-<footer>
-    Website developed by <a href="https://t.me/marcymir" target="_blank">@marcymir</a>
-</footer>
-<style>
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0; /* Ensure the footer starts from the left side */
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-    backdrop-filter: blur(20px); /* Increased blur effect */
-    z-index: 9999; /* High z-index to stay above all elements */
-    text-align: center;
-    padding: 10px 0;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #ffffff; /* White text for contrast */
-}
+<body>
+    <header>
+        <a href="en.html">
+            <img id="lingua" src="bandierait.png" alt="Lingua">
+        </a>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+                font-family: 'Open Sauce', sans-serif;
+                cursor: url('cursore.png'), auto;
+            }
 
-footer a {
-    color: #007bff;
-    text-decoration: none;
-}
+            a,
+            button {
+                cursor: url('cursore.png'), pointer;
+            }
 
-footer a:hover {
-    text-decoration: underline;
-}
+            button {
+                cursor: url('cursore.png'), pointer;
+            }
 
-@media (max-width: 600px) {
-    footer {
-        font-size: 14px;
-        padding: 8px 0;
-    }
-}
-</style>
-<div id="background">
-<img src="background.png" alt="Sfondo">
-</div>
-<div id="backgroundmob">
-  <img src="backgroundRenamob.png" alt="Sfondo">
-</div>
-<style>
-#background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-}
+            #lingua {
+                cursor: pointer;
+                width: 30px;
+                position: absolute;
+                top: 20px;
+                right: 57px;
+                transform: translateX(50%);
+                border-radius: 20px;
+            }
 
-#background img {
-  width: 100%;
-  height: auto;
-  filter: blur(10px);
-}
-</style>
-<style>
-#backgroundmob {
-  display: none;
-}
-  
-@media screen and (max-width: 767px) {  
-  #backgroundmob {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
-  }
+            @media screen and (max-width: 600px) {
+                #lingua {
+                    margin-top: 30px;
+                    right: 50%;
+                }
+            }
+        </style>
+        <style>
+            ::selection {
+                background-color: white;
+                color: black;
+            }
+        </style>
+        <footer>
+            Website developed by <a href="https://t.me/marcymir" target="_blank">@marcymir</a>
+        </footer>
+        <style>
+            footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                backdrop-filter: blur(20px);
+                z-index: 9999;
+                text-align: center;
+                padding: 10px 0;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                color: #ffffff;
+            }
 
-  #backgroundmob img {
-    width: 100%;
-    height: auto;
-    filter: blur(5px);
-  }
-}
-</style>
-<div id="custom-menu">
-  <ul>
-    <li><a href="https://renaarcade.altervista.org"><img src="https://gamecloudservices.altervista.org/logo.jpg" alt="Image 1" border-radius="10" width="20"><span>Rena Arcades</span></a></li>
-    <li><a href="https://renastore.altervista.org"><img src="https://renastore.altervista.org/logo.png" alt="Image 2" width="18"><span>Rena Store</span></a></li>
-    <li><a href="https://renadeveloper.altervista.org"><img src="https://renadeveloper.altervista.org/logo.png" alt="Image 3" width="20"><span>Rena Developer</span></a></li>
-    <li><a href="https://renasupporto.altervista.org"><img src="https://renasupporto.altervista.org/icon.jpg" alt="Image 3" width="20"><span>Rena Supporto</span></a></li>
-  </ul>
-</div>
-  
-<style>
-#custom-menu {
-  display: none;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 10px;
-  padding: 10px;
-  backdrop-filter: blur(5px);
-  z-index: 1000;
-}
+            footer a {
+                color: #007bff;
+                text-decoration: none;
+            }
 
-#custom-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+            footer a:hover {
+                text-decoration: underline;
+            }
 
-#custom-menu ul li {
-  margin-bottom: 10px;
-}
+            @media (max-width: 600px) {
+                footer {
+                    font-size: 14px;
+                    padding: 8px 0;
+                }
+            }
+        </style>
+        <div id="background">
+            <img src="background.png" alt="Sfondo">
+        </div>
+        <div id="backgroundmob">
+            <img src="backgroundRenamob.png" alt="Sfondo">
+        </div>
+        <style>
+            #background {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                overflow: hidden;
+            }
 
-#custom-menu ul li a {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  text-decoration: none;
-}
+            #background img {
+                width: 100%;
+                height: auto;
+                filter: blur(10px);
+            }
+        </style>
+        <style>
+            #backgroundmob {
+                display: none;
+            }
 
-#custom-menu ul li a img {
-  margin-right: 10px;
-  border-radius: 5px;
-}
+            @media screen and (max-width: 767px) {
+                #backgroundmob {
+                    display: block;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                    overflow: hidden;
+                }
 
-#custom-menu ul li a span {
-  font-size: 16px;
-}
-</style>
+                #backgroundmob img {
+                    width: 100%;
+                    height: auto;
+                    filter: blur(5px);
+                }
+            }
+        </style>
+        <div id="custom-menu">
+            <ul>
+                <li><a href="https://renaarcade.altervista.org"><img
+                            src="https://gamecloudservices.altervista.org/logo.jpg" alt="Image 1" border-radius="10"
+                            width="20"><span>Rena Arcades</span></a></li>
+                <li><a href="https://renastore.altervista.org"><img src="https://renastore.altervista.org/logo.png"
+                            alt="Image 2" width="18"><span>Rena Store</span></a></li>
+                <li><a href="https://renadeveloper.altervista.org"><img
+                            src="https://renadeveloper.altervista.org/logo.png" alt="Image 3" width="20"><span>Rena
+                            Developer</span></a></li>
+                <li><a href="https://renasupporto.altervista.org"><img
+                            src="https://renasupporto.altervista.org/icon.jpg" alt="Image 3" width="20"><span>Rena
+                            Supporto</span></a></li>
+            </ul>
+        </div>
 
-<script>
-document.addEventListener('contextmenu', function(event) {
-  event.preventDefault();
-  if (window.innerWidth > 768) { // Mostra il menu solo se la larghezza della finestra è maggiore di 768px (considerato desktop)
-    var customMenu = document.getElementById('custom-menu');
-    customMenu.style.display = 'block';
-    customMenu.style.left = event.pageX + 'px';
-    customMenu.style.top = event.pageY + 'px';
-  }
-});
+        <style>
+            #custom-menu {
+                display: none;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.8);
+                border-radius: 10px;
+                padding: 10px;
+                backdrop-filter: blur(5px);
+                z-index: 1000;
+            }
 
-document.addEventListener('click', function(event) {
-  var customMenu = document.getElementById('custom-menu');
-  customMenu.style.display = 'none';
-});
+            #custom-menu ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
 
-</script>
+            #custom-menu ul li {
+                margin-bottom: 10px;
+            }
+
+            #custom-menu ul li a {
+                display: flex;
+                align-items: center;
+                color: #fff;
+                text-decoration: none;
+            }
+
+            #custom-menu ul li a img {
+                margin-right: 10px;
+                border-radius: 5px;
+            }
+
+            #custom-menu ul li a span {
+                font-size: 16px;
+            }
+        </style>
+
+        <script>
+            document.addEventListener('contextmenu', function (event) {
+                event.preventDefault();
+                if (window.innerWidth > 768) {
+                    var customMenu = document.getElementById('custom-menu');
+                    customMenu.style.display = 'block';
+                    customMenu.style.left = event.pageX + 'px';
+                    customMenu.style.top = event.pageY + 'px';
+                }
+            });
+
+            document.addEventListener('click', function (event) {
+                var customMenu = document.getElementById('custom-menu');
+                customMenu.style.display = 'none';
+            });
+
+        </script>
     </header>
-<div style="text-align: center; margin-top: 100px;">
-    <div style="margin-top: 10px;">
-        <h1>Chi sono?</h1>
-        <p>Ciao! Mi chiamo Marcello Miranda e ho 13 anni. Sono il proprietario di Rena, un organizzazione che comprende diversi siti web e webapp che ho sviluppato interamente da solo ma con molti cosigli dal mio team. Sono orgoglioso di presentarti i miei progetti: il Rena Store, Rena Arcades e Rena Developer di cui parleremo più approfonditamente dopo</p>
-        <h1>La storia di Rena</h1>
-        <p>Rena è nata nel 2020, quando avevo solo 8 anni. Inizialmente, mi dedicavo alla realizzazione di concept video, sperimentando con idee creative e imparando le basi della produzione digitale. Qualche anno dopo, nel 2022, ho cominciato a creare siti web utilizzando strumenti no-code, che mi hanno permesso di trasformare le mie idee in realtà senza la necessità di scrivere codice. Successivamente nel 2023, imparando l'HTML, il CSS e il JavaScript ho ri-progettato tutti i siti no-code in HTML con hosting Altervista</p>
+    <div style="text-align: center; margin-top: 100px;">
+        <div style="margin-top: 10px;">
+            <h1>Chi sono?</h1>
+            <p>Ciao! Mi chiamo Marcello Miranda. Sono il proprietario di Rena, un organizzazione che comprende diversi
+                siti web e webapp che ho sviluppato interamente da solo ma con molti cosigli dal mio team. Sono
+                orgoglioso di presentarti i miei progetti: il Rena Store, Rena Arcades e Rena Developer di cui parleremo
+                più approfonditamente dopo</p>
+            <h1>La storia di Rena</h1>
+            <p>Rena è nata nel 2020. Inizialmente, mi dedicavo alla realizzazione di concept video, sperimentando con
+                idee creative e imparando le basi della produzione digitale. Qualche anno dopo, nel 2022, ho cominciato
+                a creare siti web utilizzando strumenti no-code, che mi hanno permesso di trasformare le mie idee in
+                realtà senza la necessità di scrivere codice. Successivamente nel 2023, imparando l'HTML, il CSS e il
+                JavaScript ho ri-progettato tutti i siti no-code in HTML con hosting Altervista</p>
 
-<div style="width: 50%; height: 20px;"></div>
+            <div style="width: 50%; height: 20px;"></div>
 
-<div class="container">
-  <div class="img-container">
-    <img src="https://renastore.altervista.org/logo.png" alt="Placeholder">
-  </div>
-  <div class="content-container">
-    <h2>Rena Store</h2>
-    <p>Store di app apk</p>
-<button class="button" onclick="window.location.href='https://marcymir.altervista.org/rena-store.html'">Scopri di più</button>
-<button class="button" onclick="window.location.href='https://github.com/marcy2011/Rena-Store'">Vedi codice</button>
-<button class="button" onclick="window.location.href='https://renastore.altervista.org/download.html'">Download</button>
-  </div>
-</div>
+            <div class="container">
+                <div class="img-container">
+                    <img src="https://rena.altervista.org/logo.png" alt="Placeholder">
+                </div>
+                <div class="content-container">
+                    <h2>Rena</h2>
+                    <p>Sito pricipale di Rena</p>
+                    <div class="buttons-container">
+                        <button class="button" onclick="window.location.href='https://rena.altervista.org'">Scopri di
+                            più</button>
+                        <button class="button" onclick="window.location.href='https://github.com/marcy2011/Rena'">Vedi
+                            codice</button>
+                    </div>
+                </div>
+            </div>
 
-<div class="container">
-  <div class="img-container">
-    <img src="https://gamecloudservices.altervista.org/logo.jpg" alt="Placeholder">
-  </div>
-  <div class="content-container">
-    <h2>Rena Arcades</h2>
-    <p>Gioca online su browser</p>
-<button class="button" onclick="window.location.href='https://marcymir.altervista.org/rena-arcades.html'">Scopri di più</button>
-<button class="button" onclick="window.location.href='https://github.com/marcy2011/Rena-Arcade'">Vedi codice</button>
-<a href="https://renastore.altervista.org/rena-arcades.html" target="_blank">
-  <img src="https://renadeveloper.altervista.org/downloadrs.png" alt="Download On The Rena Store" style="width: 170px; height: auto; pointer-events: none;">
-</a>
-  </div>
-</div>
+            <div class="container">
+                <div class="img-container">
+                    <img src="https://renastore.altervista.org/logo.png" alt="Placeholder">
+                </div>
+                <div class="content-container">
+                    <h2>Rena Store</h2>
+                    <p>Store di app apk</p>
+                    <div class="buttons-container">
+                        <button class="button"
+                            onclick="window.location.href='https://marcymir.altervista.org/rena-store.html'">Scopri di
+                            più</button>
+                        <button class="button"
+                            onclick="window.location.href='https://github.com/marcy2011/Rena-Store'">Vedi
+                            codice</button>
+                        <button class="button"
+                            onclick="window.location.href='https://renastore.altervista.org/download.html'">Download</button>
+                    </div>
+                </div>
+            </div>
 
-<div class="container">
-  <div class="img-container">
-    <img src="https://renadeveloper.altervista.org/logo.png" alt="Placeholder">
-  </div>
-  <div class="content-container">
-    <h2>Rena Developer</h2>
-    <p>Programma, usa modelli già fatti e aggiungi al Rena Store</p>
-<button class="button" onclick="window.location.href='https://marcymir.altervista.org/rena-developer.html'">Scopri di più</button>
-<button class="button" onclick="window.location.href='https://github.com/marcy2011/Rena-Developer'">Vedi codice</button>
-  </div>
-</div>
+            <div class="container">
+                <div class="img-container">
+                    <img src="https://gamecloudservices.altervista.org/logo.jpg" alt="Placeholder">
+                </div>
+                <div class="content-container">
+                    <h2>Rena Arcades</h2>
+                    <p>Gioca online su browser</p>
+                    <div class="buttons-container">
+                        <button class="button"
+                            onclick="window.location.href='https://marcymir.altervista.org/rena-arcades.html'">Scopri di
+                            più</button>
+                        <button class="button"
+                            onclick="window.location.href='https://github.com/marcy2011/Rena-Arcade'">Vedi
+                            codice</button>
+                        <a href="https://renastore.altervista.org/rena-arcades.html" target="_blank">
+                            <img src="https://renadeveloper.altervista.org/downloadrs.png"
+                                alt="Download On The Rena Store"
+                                style="width: 170px; height: auto; pointer-events: none;">
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-<div class="container">
-  <div class="img-container">
-    <img src="https://renasupporto.altervista.org/icon.jpg" alt="Placeholder">
-  </div>
-  <div class="content-container">
-    <h2>Rena Supporto</h2>
-    <p>Contatta il servizio clienti di Rena</p>
-<button class="button" onclick="window.location.href='https://marcymir.altervista.org/rena-supporto.html'">Scopri di più</button>
-<button class="button" onclick="window.location.href='https://github.com/marcy2011/Rena-Supporto'">Vedi codice</button>
-  </div>
-</div>
-<h1>Altri progetti</h1>
-<div class="container">
-  <div class="img-container">
-    <img src="https://renastore.altervista.org/logo_calcolatrice.png" alt="Placeholder">
-  </div>
-  <div class="content-container">
-    <h2>Calcolatrice</h2>
-    <p>Una calcolatrice WebApp</p>
-<button class="button" onclick="window.location.href='https://renadeveloper.altervista.org/calcolatrice-modello.html'">Scopri di più</button>
-<button class="button" onclick="window.location.href='https://github.com/marcy2011/calculator'">Vedi codice</button>
-<a href="https://renastore.altervista.org/calculator.html" target="_blank">
-  <img src="https://renadeveloper.altervista.org/downloadrs.png" alt="Download On The Rena Store" style="width: 170px; height: auto; pointer-events: none;">
-</a>
-  </div>
-</div>
-<div class="container">
-  <div class="img-container">
-    <img src="https://renastore.altervista.org/qrcodemaker.png" alt="Placeholder">
-  </div>
-  <div class="content-container">
-    <h2>QRCode Maker</h2>
-    <p>Crea QR Code con collegamenti a testo, link e immagini con la WebApp QRCode Maker </p>
-<button class="button" onclick="window.location.href='https://renadeveloper.altervista.org/qrcode-maker-modello.html'">Scopri di più</button>
-<button class="button" onclick="window.location.href='https://github.com/marcy2011/QRCode-Maker'">Vedi codice</button>
-<a href="https://renastore.altervista.org/qrcode-maker.html" target="_blank">
-  <img src="https://renadeveloper.altervista.org/downloadrs.png" alt="Download On The Rena Store" style="width: 170px; height: auto; pointer-events: none;">
-</a>
-  </div>
-</div>
-<h1>Per i miei clienti:</h1>
-<div class="container">
-  <div class="img-container">
-    <img src="https://astolfo.altervista.org/pic.gif" alt="Placeholder">
-  </div>
-  <div class="content-container">
-    <h2>Astolfo</h2>
-    <p>Link social Astolfo</p>
-<button class="button" onclick="window.location.href='https://astolfo.altervista.org'">Scopri di più</button>
-  </div>
-</div>
-    <style>
-  .container {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    border-radius: 30px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    max-width: 600px;
-    margin: 50px auto;
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px);
-  }
-  .img-container {
-    flex: 1;
-    text-align: center;
-    border-radius: 40px;
-  }
-  .img-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 30px;
-    margin-top: 4px;
-    margin-left: 10px;
-  }
-  .content-container {
-    flex: 2;
-    padding: 20px;
-  }
-  .content-container h2 {
-    margin-top: 0;
-  }
-  .content-container button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  
-          .button {
-            margin: 10px 0;
-            padding: 10px 20px;
-            background-color: #ffffff;
-            color: black;
-            border: none;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            font-size: 16px;
-            text-decoration: none;
-            display: inline-block;
-        }
-          .button:hover {
-    transform: scale(0.9);
-    background-color: black;
-    color: white;
-  }
-  
-    .content-container h2 {
-    margin-top: 0;
-    text-decoration: none;
-  }
-  
-  @media screen and (max-width: 767px) {
-  .container {
-  width: 350px;
-  }
-  
-  .img-container img {
-  width: 550px;
-  }
-  
-    .content-container {
-    font-size: 12px;
-    padding: 13px;
-  }
-  
-            .button:hover {
-            margin: 10px 0;
-            padding: 10px 20px;
-            background-color: #ffffff;
-            color: black;
-            border: none;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            font-size: 16px;
-  }
-  
-    .content-container button {
-        padding: 8px 14px;
-    }
-}
+            <div class="container">
+                <div class="img-container">
+                    <img src="https://renadeveloper.altervista.org/logo.png" alt="Placeholder">
+                </div>
+                <div class="content-container">
+                    <h2>Rena Developer</h2>
+                    <p>Programma, usa modelli già fatti e aggiungi al Rena Store</p>
+                    <div class="buttons-container">
+                        <button class="button"
+                            onclick="window.location.href='https://marcymir.altervista.org/rena-developer.html'">Scopri
+                            di più</button>
+                        <button class="button"
+                            onclick="window.location.href='https://github.com/marcy2011/Rena-Developer'">Vedi
+                            codice</button>
+                    </div>
+                </div>
+            </div>
 
-</style>
-    <a href="https://github.com/marcy2011/Portfolio">
-    <button class="btn">Vedi il codice di questo sito</button>
-</a>
-<style>
-    .btn {
-        padding: 10px 20px;
-        background-color: #ffffff;
-        color: black;
-        border: none;
-        border-radius: 10px;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        font-size: 16px;
-        margin: 10px auto;
-        display: block;
-        text-decoration-line: underline;
-        text-decoration-color: white;
-    }
-    .btn:hover {
-        transform: scale(0.9);
-        background-color: black;
-        color: white;
-        text-decoration-line: underline;
-        text-decoration-color: black;
-    }
-</style>
-        <h1>I miei social</h1> 
-<style>
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-  .app-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 1.5rem;
-    justify-content: center;
-  }
-  .app-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .app-icon {
-    width: 120px;
-    height: 120px;
-    border-radius: 30px;
-    margin-bottom: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    object-fit: cover;
-  }
-  .app-name {
-    font-size: 0.9rem;
-    color: white;
-    margin: 0;
-    max-width: 120px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    text-decoration: none;
-  }
-</style>
-  <main>
-    <div class="app-grid">
-      <div class="app-card">
-        <a href="https://www.instagram.com/marcy.mir" target="_blank" style="text-decoration: none;">
-          <img src="https://marcymir.altervista.org/iglogo.png" alt="Instagram Logo" class="app-icon">
-          <p class="app-name">Instagram</p>
-        </a>
-      </div>
-      <div class="app-card">
-        <a href="https://github.com/marcy2011" target="_blank" style="text-decoration: none;">
-          <img src="https://marcymir.altervista.org/gitlogo.png" alt="Git Hub Logo" class="app-icon">
-          <p class="app-name">Git Hub</p>
-        </a>
-      </div>
-      <div class="app-card">
-        <a href="https://pin.it/64DESVvzC" target="_blank" style="text-decoration: none;">
-          <img src="https://marcymir.altervista.org/pinlogo.png" alt="Pinterest Logo" class="app-icon">
-          <p class="app-name">Pinterest</p>
-        </a>
-      </div>
-      <div class="app-card">
-        <a href="https://t.me/marcymir" target="_blank" style="text-decoration: none;">
-          <img src="https://marcymir.altervista.org/tglogo.png" alt="Telegram Logo" class="app-icon">
-          <p class="app-name">Telegram</p>
-        </a>
-      </div>
-      <div class="app-card">
-        <a href="https://www.snapchat.com/add/marcymiranda11?share_id=U5XLJsVDPo4&locale=it-IT" target="_blank" style="text-decoration: none;">
-          <img src="https://marcymir.altervista.org/snlogo.png" alt="Snapchat Logo" class="app-icon">
-          <p class="app-name">Snapchat</p>
-        </a>
-      </div>
-      <div class="app-card">
-        <a href="https://www.threads.net/@marcy.mir" target="_blank" style="text-decoration: none;">
-          <img src="https://marcymir.altervista.org/thrlogo.png" alt="Threads Logo" class="app-icon">
-          <p class="app-name">Threads</p>
-        </a>
-      </div>
-      <div class="app-card">
-        <a href="https://www.tiktok.com/@marcymir/" target="_blank" style="text-decoration: none;">
-          <img src="https://marcymir.altervista.org/tiklogo.png" alt="TikTok Logo" class="app-icon">
-          <p class="app-name">TitTok</p>
-        </a>
-      </div>
-<div class="app-card">
-  <a href="https://www.facebook.com/share/qEMqB34M2GDTZRmT/" target="_blank" style="text-decoration: none;">
-    <img src="https://marcymir.altervista.org/facelogo.png" alt="Facebook Logo" class="app-icon">
-    <p class="app-name">Facebook</p>
-  </a>
-</div>
-<div class="app-card">
-  <a href="https://mastodon.social/@Marcymir" target="_blank" style="text-decoration: none;">
-    <img src="https://marcymir.altervista.org/malogo.png" alt="Mastodon Logo" class="app-icon">
-    <p class="app-name">Mastodon</p>
-  </a>
-</div>
-      <div class="app-card">
-        <a href="https://www.reddit.com/u/marcellomiranda05/s/VSRavDMrMS" style="text-decoration: none;">
-          <img src="https://marcymir.altervista.org/redlogo.png" alt="Reddit Logo" class="app-icon">
-          <p class="app-name">Reddit</p>
-        </a>
-      </div>
-      <div class="app-card">
-        <a href="https://www.reddit.com/u/marcellomiranda05/s/VSRavDMrMS" style="text-decoration: none;">
-          <img src="https://marcymir.altervista.org/x.avif" alt="X Logo" class="app-icon">
-          <p class="app-name">X</p>
-        </a>
-      </div>
-    </div>
-  </main>
-<h1>Profili social di Rena</h1>
-  <main>
-    <div class="app-grid">
-      <div class="app-card">
-        <a href="https://www.instagram.com/renaofficialtech/" target="_blank" style="text-decoration: none;">
-          <img src="https://marcymir.altervista.org/iglogo.png" alt="Instagram Logo" class="app-icon">
-          <p class="app-name">Instagram</p>
-        </a>
-      </div>
-      <div class="app-card">
-        <a href="https://github.com/marcy2011" target="_blank" style="text-decoration: none;">
-          <img src="https://marcymir.altervista.org/gitlogo.png" alt="Git Hub Logo" class="app-icon">
-          <p class="app-name">Git Hub</p>
-        </a>
-      </div>
-      <div class="app-card">
-        <a href="https://t.me/renatechnologyofficial" target="_blank" style="text-decoration: none;">
-          <img src="https://marcymir.altervista.org/tglogo.png" alt="Telegram Logo" class="app-icon">
-          <p class="app-name">Telegram</p>
-        </a>
-      </div>
-      <div class="app-card">
-        <a href="https://www.threads.net/@renaofficialtech" target="_blank" style="text-decoration: none;">
-          <img src="https://marcymir.altervista.org/thrlogo.png" alt="Threads Logo" class="app-icon">
-          <p class="app-name">Threads</p>
-        </a>
-      </div>
-      <div class="app-card">
-        <a href="https://www.tiktok.com/@renatechnology" target="_blank" style="text-decoration: none;">
-          <img src="https://marcymir.altervista.org/tiklogo.png" alt="TikTok Logo" class="app-icon">
-          <p class="app-name">TitTok</p>
-        </a>
-      </div>
-<div class="app-card">
-  <a href="https://www.facebook.com/profile.php?id=61556113467070" target="_blank" style="text-decoration: none;">
-    <img src="https://marcymir.altervista.org/facelogo.png" alt="Facebook Logo" class="app-icon">
-    <p class="app-name">Facebook</p>
-  </a>
-</div>
-<div class="app-card">
-  <a href="https://mastodon.social/@Renaofficial" target="_blank" style="text-decoration: none;">
-    <img src="https://marcymir.altervista.org/malogo.png" alt="Mastodon Logo" class="app-icon">
-    <p class="app-name">Mastodon</p>
-  </a>
-</div>
-</div>
-  </main>
-<div style="width: 50%; height: 50px;"></div>
+            <div class="container">
+                <div class="img-container">
+                    <img src="https://renasupporto.altervista.org/icon.jpg" alt="Placeholder">
+                </div>
+                <div class="content-container">
+                    <h2>Rena Supporto</h2>
+                    <p>Contatta il servizio clienti di Rena</p>
+                    <div class="buttons-container">
+                        <button class="button"
+                            onclick="window.location.href='https://marcymir.altervista.org/rena-supporto.html'">Scopri
+                            di più</button>
+                        <button class="button"
+                            onclick="window.location.href='https://github.com/marcy2011/Rena-Supporto'">Vedi
+                            codice</button>
+                    </div>
+                </div>
+            </div>
+
+            <h1>Altri progetti</h1>
+
+            <div class="container">
+                <div class="img-container">
+                    <img src="https://renastore.altervista.org/logo_calcolatrice.png" alt="Placeholder">
+                </div>
+                <div class="content-container">
+                    <h2>Calcolatrice</h2>
+                    <p>Una calcolatrice WebApp</p>
+                    <div class="buttons-container">
+                        <button class="button"
+                            onclick="window.location.href='https://renadeveloper.altervista.org/calcolatrice-modello.html'">Scopri
+                            di più</button>
+                        <button class="button"
+                            onclick="window.location.href='https://github.com/marcy2011/calculator'">Vedi
+                            codice</button>
+                        <a href="https://renastore.altervista.org/calculator.html" target="_blank">
+                            <img src="https://renadeveloper.altervista.org/downloadrs.png"
+                                alt="Download On The Rena Store"
+                                style="width: 170px; height: auto; pointer-events: none;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="img-container">
+                    <img src="https://renastore.altervista.org/qrcodemaker.png" alt="Placeholder">
+                </div>
+                <div class="content-container">
+                    <h2>QRCode Maker</h2>
+                    <p>Crea QR Code con collegamenti a testo, link e immagini con la WebApp QRCode Maker</p>
+                    <div class="buttons-container">
+                        <button class="button"
+                            onclick="window.location.href='https://renadeveloper.altervista.org/qrcode-maker-modello.html'">Scopri
+                            di più</button>
+                        <button class="button"
+                            onclick="window.location.href='https://github.com/marcy2011/QRCode-Maker'">Vedi
+                            codice</button>
+                        <a href="https://renastore.altervista.org/qrcode-maker.html" target="_blank">
+                            <img src="https://renadeveloper.altervista.org/downloadrs.png"
+                                alt="Download On The Rena Store"
+                                style="width: 170px; height: auto; pointer-events: none;">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <h1>Per i miei clienti:</h1>
+
+            <div class="container">
+                <div class="img-container">
+                    <img src="https://astolfo.altervista.org/pic.gif" alt="Placeholder">
+                </div>
+                <div class="content-container">
+                    <h2>Astolfo</h2>
+                    <p>Link social Astolfo</p>
+                    <div class="buttons-container">
+                        <button class="button" onclick="window.location.href='https://astolfo.altervista.org'">Scopri di
+                            più</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="img-container">
+                    <img src="https://wombocombo.altervista.org/logo.png" alt="Placeholder">
+                </div>
+                <div class="content-container">
+                    <h2>Wombo Combo</h2>
+                    <p>Drink Marketplace</p>
+                    <div class="buttons-container">
+                        <button class="button" onclick="window.location.href='https://wombocombo.altervista.org'">Scopri
+                            di più</button>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .container {
+                    background-color: rgba(0, 0, 0, 0.6);
+                    color: white;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    max-width: 700px;
+                    width: 90%;
+                    margin: 40px auto;
+                    backdrop-filter: blur(20px);
+                    -webkit-backdrop-filter: blur(20px);
+                    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                }
+
+                .img-container {
+                    flex: 0 0 120px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                }
+
+                .img-container img {
+                    width: 120px;
+                    height: 120px;
+                    object-fit: cover;
+                    border-radius: 15px;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+                }
+
+                .content-container {
+                    flex: 1;
+                    padding: 20px;
+                    min-height: 120px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+                .content-container h2 {
+                    margin: 0 0 8px 0;
+                    font-size: 1.4em;
+                    font-weight: 600;
+                }
+
+                .content-container p {
+                    margin: 0 0 15px 0;
+                    font-size: 0.95em;
+                    opacity: 0.9;
+                    line-height: 1.4;
+                }
+
+                .buttons-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 8px;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .button {
+                    padding: 8px 16px;
+                    background-color: #ffffff;
+                    color: black;
+                    border: none;
+                    border-radius: 20px;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    display: inline-block;
+                    white-space: nowrap;
+                }
+
+                .button:hover {
+                    transform: translateY(-5px) scale(1.02);
+
+                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+
+                    filter: brightness(1.2);
+
+                    background-color: rgba(255, 255, 255, 0.9);
+                    color: black;
+                    transition: all 0.3s ease;
+                }
+
+                @media screen and (max-width: 768px) {
+                    .container {
+                        flex-direction: column;
+                        text-align: center;
+                        max-width: 340px;
+                        margin: 30px auto;
+                        border-radius: 16px;
+                    }
+
+                    .img-container {
+                        flex: none;
+                        width: 100%;
+                        padding: 20px 20px 10px 20px;
+                    }
+
+                    .img-container img {
+                        width: 70px;
+                        height: 70px;
+                    }
+
+                    .content-container {
+                        padding: 10px 20px 20px 20px;
+                        min-height: auto;
+                    }
+
+                    .content-container h2 {
+                        font-size: 1.3em;
+                        margin-bottom: 6px;
+                    }
+
+                    .content-container p {
+                        font-size: 0.9em;
+                        margin-bottom: 12px;
+                    }
+
+                    .buttons-container {
+                        justify-content: center;
+                        gap: 6px;
+                    }
+
+                    .button {
+                        padding: 7px 14px;
+                        font-size: 13px;
+                    }
+
+                    .buttons-container img {
+                        width: 140px !important;
+                        margin-top: 8px;
+                    }
+                }
+
+                @media screen and (max-width: 480px) {
+                    .container {
+                        max-width: 310px;
+                    }
+
+                    .img-container img {
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    .content-container h2 {
+                        font-size: 1.2em;
+                    }
+
+                    .content-container p {
+                        font-size: 0.85em;
+                    }
+
+                    .button {
+                        padding: 6px 12px;
+                        font-size: 12px;
+                    }
+
+                    .buttons-container img {
+                        width: 120px !important;
+                    }
+                }
+            </style>
+            <a href="https://github.com/marcy2011/Portfolio">
+                <button class="btn">Vedi il codice di questo sito</button>
+            </a>
+            <style>
+                .btn {
+                    padding: 10px 20px;
+                    background-color: #ffffff;
+                    color: black;
+                    border: none;
+                    border-radius: 10px;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                    font-size: 16px;
+                    margin: 10px auto;
+                    display: block;
+                    text-decoration-line: underline;
+                    text-decoration-color: white;
+                }
+
+                .btn:hover {
+                    transform: scale(0.9);
+                    background-color: black;
+                    color: white;
+                    text-decoration-line: underline;
+                    text-decoration-color: black;
+                }
+            </style>
+            <style>
+                body {
+                    background-color: black;
+                    color: white;
+                    font-family: 'Open Sauce', sans-serif;
+                    margin: 0;
+                    padding: 20px;
+                }
+
+                h1 {
+                    text-align: center;
+                    font-size: 32px;
+                    margin: 40px 0;
+                }
+
+                .personal-social {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 2rem;
+                }
+
+                .app-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                    gap: 1.5rem;
+                    justify-content: center;
+                }
+
+                .app-card {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    transition: transform 0.3s ease;
+                }
+
+                .app-card:hover {
+                    transform: translateY(-5px);
+                }
+
+                .app-icon {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 30px;
+                    margin-bottom: 0.5rem;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                    object-fit: cover;
+                    transition: all 0.3s ease;
+                }
+
+                .app-card:hover .app-icon {
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+                }
+
+                .app-name {
+                    font-size: 0.9rem;
+                    color: white;
+                    margin: 0;
+                    max-width: 120px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    text-decoration: none;
+                }
+
+                .social-banner {
+                    padding: 50px 0;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+
+                .banner-section {
+                    margin-bottom: 40px;
+                }
+
+                .banner-section:last-child {
+                    margin-bottom: 0;
+                }
+
+                .banner-section h2 {
+                    text-align: center;
+                    font-size: 32px;
+                    margin-bottom: 30px;
+                    letter-spacing: 2px;
+                }
+
+                .social-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                    gap: 25px;
+                    padding: 0 20px;
+                }
+
+                .social-link {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                    border-radius: 15px;
+                    transition: all 0.3s ease;
+                    text-decoration: none;
+                    color: white;
+                    position: relative;
+                    overflow: hidden;
+                    backdrop-filter: blur(10px);
+                }
+
+                .instagram-link {
+                    background: linear-gradient(45deg, #833AB4, #E1306C, #FD1D1D, #F77737);
+                    border-color: #E1306C;
+                }
+
+                .facebook-link {
+                    background: linear-gradient(45deg, #1877F2, #42A5F5);
+                    border-color: #1877F2;
+                }
+
+                .threads-link {
+                    background: linear-gradient(45deg, #000000, #333333);
+                    border-color: #666666;
+                }
+
+                .mastodon-link {
+                    background: linear-gradient(45deg, #6364FF, #563ACC);
+                    border-color: #6364FF;
+                }
+
+                .tiktok-link {
+                    background: linear-gradient(45deg, #000000, #FF0050, #00F2EA);
+                    border-color: #FF0050;
+                }
+
+                .github-link {
+                    background: linear-gradient(45deg, #24292E, #6F42C1);
+                    border-color: #6F42C1;
+                }
+
+                .telegram-link {
+                    background: linear-gradient(45deg, #0088CC, #229ED9);
+                    border-color: #0088CC;
+                }
+
+                .kofi-link {
+                    background: linear-gradient(45deg, #FF5F5F, #FF8E53);
+                    border-color: #FF5F5F;
+                }
+
+                .social-link::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(90deg,
+                            transparent,
+                            rgba(255, 255, 255, 0.2),
+                            transparent);
+                    transition: 0.5s;
+                }
+
+                .social-link:hover::before {
+                    left: 100%;
+                }
+
+                .social-link:hover {
+                    transform: translateY(-8px) scale(1.05);
+                    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+                    filter: brightness(1.1);
+                }
+
+                .social-icon-wrapper {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 15px;
+                    background: rgba(255, 255, 255, 0.2);
+                    border-radius: 10px;
+                    transition: all 0.3s ease;
+                }
+
+                .pinterest-link {
+                    background: linear-gradient(45deg, #BD081C, #E60023);
+                    border-color: #E60023;
+                }
+
+                .x-link {
+                    background: linear-gradient(45deg, #000000, #1a1a1a);
+                    border-color: #000000;
+                }
+
+                .reddit-link {
+                    background: linear-gradient(45deg, #FF4500, #FF6314);
+                    border-color: #FF4500;
+                }
+
+                .snapchat-link {
+                    background: linear-gradient(45deg, #CCAA00, #FF8C00);
+                    border-color: #CCAA00;
+                }
+
+                .social-icon {
+                    width: 24px;
+                    height: 24px;
+                    transition: all 0.3s ease;
+                }
+
+                .social-link:hover .social-icon-wrapper {
+                    background: rgba(255, 255, 255, 0.3);
+                    transform: rotate(10deg) scale(1.1);
+                }
+
+                .social-link span {
+                    font-size: 16px;
+                    font-weight: 600;
+                    letter-spacing: 0.5px;
+                    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+                }
+
+                @media (max-width: 768px) {
+                    .social-grid {
+                        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                        gap: 15px;
+                    }
+
+                    .social-link {
+                        flex-direction: column;
+                        text-align: center;
+                        padding: 15px;
+                    }
+
+                    .social-icon-wrapper {
+                        margin-right: 0;
+                        margin-bottom: 10px;
+                    }
+
+                    .app-grid {
+                        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                        gap: 1rem;
+                    }
+
+                    .app-icon {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+
+                @media (hover: hover) {
+                    .social-link:hover .social-icon {
+                        transform: scale(1.2);
+                    }
+                }
+            </style>
+            </head>
+
+            <body>
+                <section class="social-banner">
+                    <div class="banner-section">
+                        <h2>Social Media</h2>
+                        <div class="social-grid">
+                            <a href="https://www.instagram.com/marcy.mir" class="social-link instagram-link"
+                                target="_blank">
+                                <div class="social-icon-wrapper">
+                                    <svg class="social-icon" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                    </svg>
+                                </div>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=61555926303170&rdid=ZIKh3lexnmMEBkoj&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FqEMqB34M2GDTZRmT%2F#"
+                                class="social-link facebook-link" target="_blank">
+                                <div class="social-icon-wrapper">
+                                    <svg class="social-icon" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                    </svg>
+                                </div>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="https://www.threads.net/@marcy.mir" class="social-link threads-link"
+                                target="_blank">
+                                <div class="social-icon-wrapper">
+                                    <svg class="social-icon" role="img" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                        <path fill="white"
+                                            d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.359-.89h-.029c-.844 0-1.992.232-2.721 1.32L7.734 7.847c.98-1.454 2.568-2.256 4.478-2.256h.044c3.194.02 5.097 1.975 5.287 5.388.108.046.216.094.321.142 1.49.7 2.58 1.761 3.154 3.07.797 1.82.871 4.79-1.548 7.158-1.85 1.81-4.094 2.628-7.277 2.65Zm1.003-11.69c-.242 0-.487.007-.739.021-1.836.103-2.98.946-2.916 2.143.067 1.256 1.452 1.839 2.784 1.767 1.224-.065 2.818-.543 3.086-3.71a10.5 10.5 0 0 0-2.215-.221z" />
+                                    </svg>
+                                </div>
+                                <span>Threads</span>
+                            </a>
+                            <a href="https://mastodon.social/@Marcymir" class="social-link mastodon-link"
+                                target="_blank">
+                                <div class="social-icon-wrapper">
+                                    <svg class="social-icon" role="img" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                        <path fill="white"
+                                            d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z" />
+                                    </svg>
+                                </div>
+                                <span>Mastodon</span>
+                            </a>
+                            <a href="https://www.tiktok.com/@marcymir" class="social-link tiktok-link" target="_blank">
+                                <div class="social-icon-wrapper">
+                                    <svg class="social-icon" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+                                    </svg>
+                                </div>
+                                <span>TikTok</span>
+                            </a>
+                            <a href="https://github.com/marcy2011" class="social-link github-link" target="_blank">
+                                <div class="social-icon-wrapper">
+                                    <svg class="social-icon" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                    </svg>
+                                </div>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://t.me/marcymir" class="social-link telegram-link" target="_blank">
+                                <div class="social-icon-wrapper">
+                                    <svg class="social-icon" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                                    </svg>
+                                </div>
+                                <span>Telegram</span>
+                            </a>
+                            <a href="https://it.pinterest.com/marcellino2011miranda" class="social-link pinterest-link"
+                                target="_blank">
+                                <div class="social-icon-wrapper">
+                                    <svg class="social-icon" viewBox="0 0 20 20" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        fill="#ffffff" stroke="#ffffff">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="Dribbble-Light-Preview"
+                                                    transform="translate(-220.000000, -7399.000000)" fill="#ffffff">
+                                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                        <path
+                                                            d="M173.876,7239 C168.399,7239 164,7243.43481 164,7248.95866 C164,7253.05869 166.407,7256.48916 169.893,7258.07936 C169.893,7256.21186 169.88,7256.45286 171.303,7250.38046 C170.521,7248.80236 171.129,7246.19673 172.88,7246.19673 C175.31,7246.19673 173.659,7249.79964 173.378,7251.2174 C173.129,7252.30544 173.959,7253.14238 174.955,7253.14238 C176.864,7253.14238 178.108,7250.71524 178.108,7247.87063 C178.108,7245.69456 176.615,7244.10437 174.042,7244.10437 C169.467,7244.10437 168.307,7249.19966 169.893,7250.79893 C170.292,7251.40294 169.893,7251.43118 169.893,7252.22174 C169.616,7253.05768 167.403,7251.84259 167.403,7248.70757 C167.403,7245.86195 169.727,7242.51518 174.457,7242.51518 C178.191,7242.51518 180.681,7245.27609 180.681,7248.2054 C180.681,7252.13805 178.523,7254.98366 175.37,7254.98366 C174.291,7254.98366 173.295,7254.3978 172.963,7253.72824 C172.36,7256.07371 172.238,7257.26258 171.303,7258.58153 C172.216,7258.83261 173.129,7259 174.125,7259 C179.602,7259 184,7254.56519 184,7249.04235 C183.752,7243.43481 179.353,7239 173.876,7239"
+                                                            id="pinterest-[#ffffff]"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span>Pinterest</span>
+                            </a>
+                            <a href="https://www.snapchat.com/add/marcymiranda11" class="social-link snapchat-link"
+                                target="_blank">
+                                <div class="social-icon-wrapper">
+                                    <svg viewBox="0 -1.5 48 48" width="20" height="20" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        fill="#ffffff" stroke="#ffffff">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <g id="Icons" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="Color-" transform="translate(-201.000000, -262.000000)"
+                                                    fill="#ffffff">
+                                                    <path
+                                                        d="M225.46152,262 L225.459405,262 C225.417982,262 225.379046,262 225.341977,262.000496 C225.046416,262.003473 224.560531,262.008186 224.516869,262.008682 C223.451307,262.008682 221.319312,262.158762 219.029211,263.166653 C217.719836,263.742538 216.54207,264.521217 215.528753,265.481107 C214.320635,266.624814 213.336427,268.034944 212.603992,269.672923 C211.53134,272.071222 211.785975,276.11085 211.990479,279.357162 L211.991226,279.362248 C212.013119,279.709912 212.036132,280.072956 212.057155,280.426698 C211.899796,280.498761 211.644663,280.574793 211.268619,280.574793 C210.663564,280.574793 209.944067,280.381922 209.130653,280.001885 C208.891318,279.890752 208.618148,279.834565 208.31674,279.834565 C207.832473,279.834565 207.321958,279.976707 206.879114,280.236307 C206.321952,280.562514 205.961954,281.023544 205.86418,281.534684 C205.799744,281.872797 205.802854,282.541087 206.547354,283.218802 C206.956861,283.591893 207.558432,283.93596 208.334902,284.24195 C208.53866,284.321951 208.780482,284.398355 209.03661,284.479349 C209.925408,284.761027 211.270609,285.186584 211.621401,286.00979 C211.799161,286.427161 211.722658,286.976379 211.39463,287.640203 C211.386047,287.658311 211.377464,287.676048 211.369627,287.694653 C211.287651,287.88554 210.522874,289.612822 208.954137,291.434493 C208.062727,292.470415 207.080882,293.336165 206.037462,294.008423 C204.763912,294.829149 203.385871,295.365715 201.942026,295.602866 C201.375036,295.695643 200.970132,296.19934 201.001729,296.771752 C201.011431,296.936716 201.050242,297.101183 201.11754,297.260317 C201.118037,297.26131 201.118659,297.262302 201.119157,297.26317 C201.348416,297.797876 201.879953,298.252084 202.744121,298.652711 C203.800105,299.141772 205.379416,299.553189 207.437769,299.875055 C207.541763,300.072267 207.649737,300.567902 207.724498,300.907256 C207.802743,301.267944 207.884345,301.638802 208.000654,302.032731 C208.126168,302.459528 208.451708,302.969551 209.288011,302.969551 C209.604968,302.969551 209.969444,302.898356 210.391514,302.816743 C211.00963,302.695811 211.854889,302.530847 212.909878,302.530847 C213.494781,302.530847 214.100954,302.582197 214.711109,302.683283 C215.887258,302.878511 216.901196,303.592693 218.07436,304.419744 C219.7915,305.630057 221.735162,307 224.704829,307 C224.78581,307 224.867039,306.997395 224.947274,306.991814 C225.045421,306.996403 225.167078,307 225.295453,307 C228.265991,307 230.209156,305.629561 231.92443,304.42024 L231.927167,304.417759 C233.100579,303.5917 234.113398,302.878511 235.289174,302.683283 C235.899079,302.582321 236.505129,302.530847 237.09028,302.530847 C238.098123,302.530847 238.896113,302.658973 239.608644,302.797518 C240.07363,302.888806 240.434996,302.932714 240.712271,302.932714 L240.739389,302.93321 L240.767502,302.93321 C241.379149,302.93321 241.828586,302.598445 242.000126,302.012638 C242.114071,301.627019 242.195425,301.264843 242.27566,300.898078 C242.345569,300.580058 242.457275,300.070283 242.561269,299.870962 C244.620991,299.548476 246.19968,299.137927 247.255789,298.64899 C248.117966,298.250224 248.648881,297.796512 248.879508,297.264038 C248.948672,297.104408 248.9891,296.938948 248.998181,296.770512 C249.030648,296.199092 248.625122,295.694402 248.057759,295.601626 C241.640875,294.547098 238.750074,287.972859 238.630531,287.693537 C238.622819,287.67518 238.614111,287.656947 238.60503,287.63921 C238.277002,286.975138 238.201246,286.426541 238.37913,286.008426 C238.729176,285.185964 240.073506,284.760407 240.962926,284.478852 C241.220422,284.397983 241.463115,284.321083 241.665256,284.241453 C242.540868,283.896642 243.166697,283.522559 243.579561,283.097746 C244.072661,282.59132 244.168693,282.106103 244.162722,281.788579 C244.147671,281.020319 243.558663,280.337642 242.621725,280.003374 C242.305265,279.872891 241.944397,279.804053 241.576936,279.804053 C241.326779,279.804053 240.956333,279.838286 240.605665,280.001513 C239.854945,280.351782 239.182469,280.543289 238.605155,280.570576 C238.298149,280.555072 238.082823,280.488714 237.943376,280.425334 C237.960916,280.12567 237.980322,279.81782 238.000349,279.496823 L238.008684,279.359395 C238.214307,276.110974 238.469814,272.068246 237.396663,269.668209 C236.661119,268.024401 235.673428,266.610675 234.460458,265.464487 C233.443161,264.503976 232.261414,263.725422 230.947312,263.149909 C228.660446,262.14946 226.528575,262 225.46152,262"
+                                                        id="Snapchat"> </path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span>Snapchat</span>
+                            </a>
+                            <a href="https://x.com/marcymir" class="social-link x-link" target="_blank">
+                                <div class="social-icon-wrapper">
+                                    <svg viewBox="0 0 1200 1227" width="20" height="20"
+                                        xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
+                                        <path
+                                            d="M717.3 573.1L1149.1 0H1051L666.5 492.5 353.5 0H0L453.1 694.3 0 1227h98.1l407.8-500.1 328.6 500.1H1200L717.3 573.1zM579.7 684.4l-47.3-69.8L168.3 81.7h138.5l323.6 477.7 47.3 69.8 385.4 567.8H924.3L579.7 684.4z" />
+                                    </svg>
+                                </div>
+                                <span>X</span>
+                            </a>
+                            <a href="https://www.reddit.com/user/marcellomiranda05" class="social-link reddit-link"
+                                target="_blank">
+                                <div class="social-icon-wrapper">
+                                    <svg viewBox="0 -1.5 20 20" width="25px" height="25px" version="1.1"
+                                        xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff">
+                                        <g id="SVGRepo_iconCarrier">
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+                                                fill-rule="evenodd">
+                                                <g id="Dribbble-Light-Preview"
+                                                    transform="translate(-100.000000, -7561.000000)" fill="#ffffff">
+                                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                                        <path
+                                                            d="M57.029,7412.24746 C56.267,7412.24746 55.628,7411.6217 55.628,7410.8499 C55.628,7410.07708 56.267,7409.43103 57.029,7409.43103 C57.79,7409.43103 58.407,7410.07708 58.407,7410.8499 C58.407,7411.6217 57.791,7412.24746 57.029,7412.24746 M57.223,7414.82961 C56.55,7415.51116 55.495,7415.8428 53.999,7415.8428 C52.502,7415.8428 51.448,7415.51116 50.776,7414.82961 C50.63,7414.68154 50.63,7414.44219 50.776,7414.2931 C50.921,7414.14503 51.158,7414.14503 51.304,7414.2931 C51.829,7414.82556 52.71,7415.08519 53.999,7415.08519 C55.287,7415.08519 56.169,7414.82556 56.695,7414.2931 C56.84,7414.14503 57.077,7414.14503 57.223,7414.2931 C57.369,7414.44219 57.369,7414.68154 57.223,7414.82961 M49.592,7410.8499 C49.592,7410.07809 50.23,7409.43103 50.991,7409.43103 C51.752,7409.43103 52.369,7410.07809 52.369,7410.8499 C52.369,7411.6217 51.752,7412.24746 50.991,7412.24746 C50.23,7412.24746 49.592,7411.6217 49.592,7410.8499 M64,7409.31339 C64,7408.04665 62.984,7407.01623 61.735,7407.01623 C61.159,7407.01623 60.616,7407.23428 60.2,7407.62475 C58.705,7406.63793 56.703,7406 54.486,7405.91278 L55.709,7402.12677 L58.921,7402.89351 C58.922,7403.93611 59.758,7404.78296 60.786,7404.78296 C61.814,7404.78296 62.651,7403.93408 62.651,7402.89148 C62.651,7401.84888 61.814,7401 60.786,7401 C60.016,7401 59.355,7401.47465 59.07,7402.15112 C58.378,7401.9858 55.904,7401.39452 55.212,7401.22921 L53.702,7405.90467 C51.401,7405.94828 49.316,7406.58316 47.765,7407.59331 C47.354,7407.22312 46.822,7407.01623 46.264,7407.01623 C45.016,7407.01623 44,7408.04665 44,7409.31339 C44,7410.11765 44.414,7410.85497 45.076,7411.26876 C44.473,7414.88134 48.67,7418 53.958,7418 C59.224,7418 63.407,7414.90872 62.849,7411.3144 C63.557,7410.91176 64,7410.1572 64,7409.31339"
+                                                            id="reddit-[#ffffff]"></path>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span>Reddit</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="width: 50%; height: 20px;"></div>
+                    <style>
+                        *:focus {
+                            outline: none;
+                        }
+
+                        button:focus,
+                        input:focus,
+                        textarea:focus {
+                            outline: none;
+                        }
+
+                        * {
+                            -webkit-tap-highlight-color: transparent;
+                        }
+
+                        body,
+                        p,
+                        h1,
+                        h2,
+                        h3,
+                        a,
+                        span {
+                            color: #ffffff;
+                            text-decoration: none;
+                        }
+
+                        a {
+                            text-decoration: none;
+                        }
+
+                        a:hover {
+                            text-decoration: none;
+                        }
+                    </style>
+            </body>
+
+</html>
